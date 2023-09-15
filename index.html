@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Text Editor</title>
+</head>
+<body>
+    <div class="editor">
+        <div class="toolbar">
+            <button class="toolbar-button bold-button"><i class="material-icons">format_bold</i></button>
+            <button class="toolbar-button italic-button"><i class="material-icons">format_italic</i></button>
+            <button class="toolbar-button underline-button"><i class="material-icons">format_underlined</i></button>
+            <input type="color" class="highlight-color">
+            <input type="color" class="text-color-picker">
+            <select class="font-style-selector">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Georgia, serif">Georgia</option>
+                <option value="Verdana, sans-serif">Verdana</option>->
+            </select>
+            <button class="toolbar-button new-tab-button"><i class="material-icons">add_circle</i> New Tab</button>
+            <button class="toolbar-button save-button"><i class="material-icons">save</i> Save</button>
+        </div>
+        <div class="tabs" id="tabs">
+            <div class="tab active" data-id="tab-1">Tab 1<i class="material-icons close-tab">close</i></div>
+        </div>
+        <div class="content" id="content" contenteditable="true">
+            Start typing here...
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
